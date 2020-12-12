@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navi"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.fragment1.fragm1.HomeFragment"
+        android:label="HomeFragment" >
+        <action
+            android:id="@+id/action_homeFragment_to_fragment32"
+            app:destination="@id/fragment32" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragment2"
+        android:name="com.example.fragment1.fragm1.fragment2"
+        android:label="fragment_fragment2"
+        tools:layout="@layout/fragment_fragment2" />
+    <fragment
+        android:id="@+id/fragment32"
+        android:name="com.example.fragment1.fragm1.fragment3"
+        android:label="fragment_fragment3"
+        tools:layout="@layout/fragment_fragment3" />
+    <fragment
+        android:id="@+id/historyFragment"
+        android:name="com.example.fragment1.fragm1.historyFragment"
+        android:label="fragment_history2"
+        tools:layout="@layout/fragment_history2" />
+    <argument android:name="amount"
+        app:argType="integer"
+        android:defaultValue="-1"/>
+
+</navigation>
